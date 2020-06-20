@@ -1,0 +1,29 @@
+table,  td , th {
+  border: 1px solid red;
+height: 50px;
+border-collapse: collapse;
+
+}
+.table {
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+
+.Caption{
+font-weight:bold;
+font-size:50px;
+}
+
+.img{
+
+height:300px;
+width:800px;
+border:5px;
+
+}
+ .td1{
+
+text-align:center;
+}
