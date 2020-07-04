@@ -1,0 +1,132 @@
+<html>
+<head> <title> Currency Converter </title> 
+<style>
+
+.footer {
+  background-color: #33ffff ;
+  padding: 10px;
+  text-align: left;
+  color: white ;
+height:500px;
+}
+
+.h2{
+font-size:30;
+color:#FF5733;
+text-align:center;
+
+}
+.h4{
+font-size:25;
+color:#28B463;
+text-align:center;
+height:100;
+
+}
+
+</style>
+</head>
+<body>
+<div style="background-color:#33ccff;text-align:center;height:100px;font-size:50px">
+<h3 id="top"></h3>
+<header>
+<p><i> <h2 class="h1">Currency Converter</h1></i> </p>
+</header>
+
+
+
+</div>
+
+<footer class="footer">
+
+
+
+ 
+
+
+   <h4 class="h4"><marquee>There is nothing permanent except change.</marquee></h4>
+</p>
+
+
+
+
+
+
+ <script>
+ 
+function euroConverter(){
+document.converter.dollar.value = document.converter.euro.value * 1.12
+document.converter.bdt.value = document.converter.euro.value * 95.41
+document.converter.rupee.value = document.converter.euro.value * 83.98
+
+document.converter.gbp.value = document.converter.rupee.value * 0.90
+}
+
+
+
+function dollarConverter(){
+document.converter.euro.value = document.converter.dollar.value * .89
+document.converter.bdt.value = document.converter.dollar.value * 84.84
+document.converter.rupee.value = document.converter.dollar.value * 74.68
+document.converter.gbp.value = document.converter.rupee.value * 0.80
+}
+function bdtConverter(){
+document.converter.dollar.value = document.converter.bdt.value *.012
+document.converter.euro.value = document.converter.bdt.value * .010
+document.converter.rupee.value = document.converter.bdt.value * .88
+document.converter.gbp.value = document.converter.rupee.value * 0.0094
+}
+function rupeeConverter(){
+document.converter.dollar.value = document.converter.rupee.value * 0.013
+document.converter.bdt.value = document.converter.rupee.value * 1.14
+document.converter.euro.value = document.converter.rupee.value * 0.012
+document.converter.gbp.value = document.converter.rupee.value * 0.001
+}
+function gbpConverter(){
+document.converter.bdt.value = document.converter.gbp.value * 105.92
+document.converter.dollar.value = document.converter.gbp.value * 1.25
+document.converter.euro.value = document.converter.gbp.value * 1.11
+document.converter.rupee.value = document.converter.gbp.value * 93.23
+
+
+}
+ 
+</script>
+<form name="converter">
+
+<center>
+<table>
+
+<tr><td class="td">BDT:</td> <td><input type="text" name="bdt" onChange="bdtConverter()"/></td></tr>
+
+<tr><td class="td">Rupes:</td> <td><input type="text" name="rupee" onChange="rupeeConverter()" /></td></tr> 
+ 
+<tr><td class="td">US Dollar:</td> <td><input type="text" name="dollar" onChange="dollarConverter()"/></td></tr>
+
+<tr><td class="td">Euro:</td> <td><input type="text" name="euro" onChange="euroConverter()"/></td></tr>
+
+<tr><td class="td">Pound:</td> <td><input type="text" name="gbp" onChange="gbpConverter()"/></td></tr>
+
+<td colspan="4" align="right"><input type="button" value="Convert" /></td>
+
+</table>
+</form>
+</center>
+</footer>
+
+<p style="text-align:left;font-size:35px;font-size:20;"><u><b>Last Update:<br/>
+<script type="text/javascript">
+
+function myFunction() {
+  document.write(document.lastModified);
+}
+myFunction();
+</script>
+</b></u>
+</p> 
+
+
+
+<p style="text-align:center;font-size:35px;font-size:20;"><u><b><a href="#top" id="top" >Go to top</u></b></a>
+</body>
+</html>
